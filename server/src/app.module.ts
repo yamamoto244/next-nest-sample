@@ -30,3 +30,4 @@ import * as ormConfig from '../ormconfig';
   providers: [AppService],
 })
 export class AppModule {}
+
