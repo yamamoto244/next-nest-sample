@@ -1,0 +1,24 @@
+version: "3.7"
+services:
+#  api:
+#    container_name: api
+#    build: .
+#    tty: true
+#    ports:
+#      - "3000:3000"
+#    volumes:
+#      - type: bind
+#        source: .
+#        target: /api
+#    depends_on:
+#      - db
+ db:
+   container_name: db
+   image: mysql:5.7
+   ports:
+     - '3306:3306'
+   environment:
+     MYSQL_ROOT_PASSWORD: password
+     MYSQL_DATABASE: develop
+     MYSQL_USER: user
+     MYSQL_PASSWORD: password
